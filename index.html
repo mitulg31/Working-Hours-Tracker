@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Hours Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Working Hours Tracker</h1>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <h4>Week 1</h4>
+                <form id="week1Form">
+                    <div class="mb-3">
+                        <label for="week1StartDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control shorter-box" id="week1StartDate" name="week1StartDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mondayHours" class="form-label">Monday</label>
+                        <input type="text" class="form-control decimal-input" id="mondayHours" name="mondayHours" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tuesdayHours" class="form-label">Tuesday</label>
+                        <input type="text" class="form-control decimal-input" id="tuesdayHours" name="tuesdayHours" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="wednesdayHours" class="form-label">Wednesday</label>
+                        <input type="text" class="form-control decimal-input" id="wednesdayHours" name="wednesdayHours"style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="thursdayHours" class="form-label">Thursday</label>
+                        <input type="text" class="form-control decimal-input" id="thursdayHours" name="thursdayHours" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fridayHours" class="form-label">Friday</label>
+                        <input type="text" class="form-control decimal-input" id="fridayHours" name="fridayHours" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="saturdayHours" class="form-label red-text">Saturday</label>
+                        <input type="text" class="form-control decimal-input" id="saturdayHours" name="saturdayHours" style="color: red" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sundayHours" class="form-label red-text">Sunday</label>
+                        <input type="text" class="form-control decimal-input" id="sundayHours" name="sundayHours" style="color: red" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Week 1</button>
+                    <div style="margin-top: 20px;">
+                        <p id="totalWeek1Hours">Total Week 1 Hours: 0</p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <h4>Week 2</h4>
+                <form id="week2Form">
+                    <div class="mb-3">
+                        <label for="week2StartDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control shorter-box" id="week2StartDate" name="week2StartDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mondayHours2" class="form-label">Monday</label>
+                        <input type="text" class="form-control decimal-input" id="mondayHours2" name="mondayHours2" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tuesdayHours2" class="form-label">Tuesday</label>
+                        <input type="text" class="form-control decimal-input" id="tuesdayHours2" name="tuesdayHours2" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="wednesdayHours2" class="form-label">Wednesday</label>
+                        <input type="text" class="form-control decimal-input" id="wednesdayHours2" name="wednesdayHours2" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="thursdayHours2" class="form-label">Thursday</label>
+                        <input type="text" class="form-control decimal-input" id="thursdayHours2" name="thursdayHours2" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fridayHours2" class="form-label">Friday</label>
+                        <input type="text" class="form-control decimal-input" id="fridayHours2" name="fridayHours2" style="color: black" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="saturdayHours2" class="form-label red-text">Saturday</label>
+                        <input type="text" class="form-control decimal-input" id="saturdayHours2" name="saturdayHours2" style="color: red" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sundayHours2" class="form-label red-text">Sunday</label>
+                        <input type="text" class="form-control decimal-input" id="sundayHours2" name="sundayHours2" style="color: red" pattern="\d+(\.\d{1,2})?" title="Enter a number with up to two decimal places">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Week 2</button>
+                    <div style="margin-top: 20px;">
+                        <p id="totalWeek2Hours">Total Week 2 Hours: 0</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <p id="totalWeek1Hours"></p>
+                <p id="totalWeek2Hours"></p>
+                <p id="grandTotalHours"></p>
+                <p id="extraHours"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
